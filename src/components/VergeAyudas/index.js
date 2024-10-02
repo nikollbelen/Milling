@@ -61,13 +61,13 @@ const IconButton = styled.div`
 
   &:hover {
     background-color: ${(props) =>
-    props.disabled ? "rgba(0,0,0,0.5)" : "rgba(8, 167, 255, 0.8)"};
+      props.disabled ? "rgba(0,0,0,0.5)" : "rgba(8, 167, 255, 0.8)"};
     transform: ${(props) => (props.disabled ? "none" : "scale(1.1)")};
   }
 
   &:active {
     background-color: ${(props) =>
-    props.disabled ? "rgba(0,0,0,0.5)" : "rgba(8, 167, 255, 0.8)"};
+      props.disabled ? "rgba(0,0,0,0.5)" : "rgba(8, 167, 255, 0.8)"};
     transform: ${(props) => (props.disabled ? "none" : "scale(0.9)")};
   }
 
@@ -130,7 +130,8 @@ const IconButtons = () => {
     true,
     true,
     true,
-    true
+    true,
+    true,
   ]);
   // const [firstClick, setFirstClick] = useState(false); // Nueva variable para controlar el parpadeo
 
@@ -215,7 +216,8 @@ const IconButtons = () => {
       {/* Primer botón con animación de parpadeo */}
       <ButtonWrapper>
         <Description className="content content1" style={{ zIndex: 30 }}>
-          <p className='en'>Help</p><p className='es'>Ayuda</p>
+          <p className="en">Help</p>
+          <p className="es">Ayuda</p>
         </Description>
         <IconButton
           active={activeButton === 0}
@@ -231,7 +233,8 @@ const IconButtons = () => {
       {/* Segundo botón */}
       <ButtonWrapper style={{ display: "none" }}>
         <Description className="content content1" style={{ zIndex: 30 }}>
-          <p className='en'>Objectives</p><p className='es'>Objetivos</p>
+          <p className="en">Objectives</p>
+          <p className="es">Objetivos</p>
         </Description>
         <IconButton
           active={activeButton === 1}
@@ -246,7 +249,8 @@ const IconButtons = () => {
       {/* Tercer botón */}
       <ButtonWrapper style={{ display: "none" }}>
         <Description className="content content1" style={{ zIndex: 30 }}>
-          <p className='en'>Equipment</p><p className='es'>Equipo</p>
+          <p className="en">Equipment</p>
+          <p className="es">Equipo</p>
         </Description>
         <IconButton
           active={activeButton === 2}
@@ -259,9 +263,10 @@ const IconButtons = () => {
       </ButtonWrapper>
 
       {/* Tercer botón */}
-      <ButtonWrapper>
+      <ButtonWrapper style={{ display: "none" }}>
         <Description className="content content1" style={{ zIndex: 30 }}>
-          <p className='en'>Information</p><p className='es'>Información</p>
+          <p className="en">Information</p>
+          <p className="es">Información</p>
         </Description>
         <IconButton
           active={activeButton === 3}
@@ -276,7 +281,8 @@ const IconButtons = () => {
       {/* Cuarto botón */}
       <ButtonWrapper>
         <Description className="content content1" style={{ zIndex: 30 }}>
-          <p className='en'>Audio</p><p className='es'>Audio</p>
+          <p className="en">Audio</p>
+          <p className="es">Audio</p>
         </Description>
         <IconButton
           onMouseEnter={handleMouseEnter}
@@ -292,7 +298,8 @@ const IconButtons = () => {
       {/* Quinto botón */}
       <ButtonWrapper style={{ display: "none" }}>
         <Description className="content content1" style={{ zIndex: 30 }}>
-          <p className='en'>Text</p><p className='es'>Texto</p>
+          <p className="en">Text</p>
+          <p className="es">Texto</p>
         </Description>
         <IconButton
           onMouseEnter={handleMouseEnter}
@@ -307,7 +314,8 @@ const IconButtons = () => {
       {/* Sexto botón */}
       <ButtonWrapper style={{ display: "none" }}>
         <Description className="content content1" style={{ zIndex: 30 }}>
-          <p className='en'>Language</p><p className='es'>Idioma</p>
+          <p className="en">Language</p>
+          <p className="es">Idioma</p>
         </Description>
         <IconButton
           onMouseEnter={handleMouseEnter}
@@ -317,6 +325,23 @@ const IconButtons = () => {
           id="btn_lang"
         >
           <img src="/images/translation.png" alt="Icon 6" />
+        </IconButton>
+      </ButtonWrapper>
+
+      {/* Septimo botón */}
+      <ButtonWrapper>
+        <Description className="content content1" style={{ zIndex: 30 }}>
+          <p className="en">Back to menu</p>
+          <p className="es">Volver al menu</p>
+        </Description>
+        <IconButton
+          onMouseEnter={handleMouseEnter}
+          onClick={handleButtonClick2}
+          active={activeButton === 7}
+          disabled={!buttonsEnabled[7]}
+          id="btn_back"
+        >
+          <img src="/images/back.png" alt="Icon 6" />
         </IconButton>
       </ButtonWrapper>
     </ButtonContainer>
