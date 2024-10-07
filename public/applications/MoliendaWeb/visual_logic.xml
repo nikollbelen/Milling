@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <tab name="Init" type="InitTab" active="true" scrollx="49.000000000000114" scrolly="334.3000000000002" scale="0.9">
+  <tab name="Init" type="InitTab" active="false" scrollx="42" scrolly="9" scale="0.9">
     <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="x%ynI^z}Ei7v/a[h:,Lr" x="210" y="-10">
       <field name="LOAD_COMP_ASSETS">TRUE</field>
       <field name="FULLSCREEN">FALSE</field>
@@ -306,7 +306,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="general" type="CommonTab" active="false" scrollx="-6.7985739275003425" scrolly="-252.10761893791846" scale="0.8999999999999999">
+  <tab name="general" type="CommonTab" active="false" scrollx="2.2737367544323206e-13" scrolly="-252.10761893791857" scale="0.8999999999999999">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="vh8cXs2Fi_ahboKb]hqj">lang</variable>
       <variable id="Kox+/$.mUs{e]f^sC=5$">sonido</variable>
@@ -797,7 +797,7 @@
       </next>
     </block>
   </tab>
-  <tab name="procedures" type="CommonTab" active="false" scrollx="194" scrolly="266.00000000000057" scale="0.9">
+  <tab name="procedures" type="CommonTab" active="false" scrollx="207.68330930782076" scrolly="16.406642368620794" scale="0.805054598346339">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="yki,}4M@uJvvwM1uROhK">paso</variable>
       <variable id="+n_]29w3AxU#lEwervR{">img</variable>
@@ -1212,7 +1212,43 @@
       </statement>
     </block>
   </tab>
-  <tab name="list" type="CommonTab" active="false" scrollx="484.8994934082029" scrolly="289.9999999999999" scale="0.9">
+  <tab name="list" type="CommonTab" active="false" scrollx="-2.895233154297216" scrolly="369.1112594604491" scale="1">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="D3W..IP3)@N%)PK%u|9F">saranda_obj</variable>
+      <variable id="QqZAHa}[A83do;2E,xF*">bombas_obj</variable>
+      <variable id="9.^AKklM,1zC0!K@$Y%j">bombas_ciclon_obj</variable>
+      <variable id="C1W.2$`EcTnf_+=`;U`{">debajo_bomba_ciclon_obj</variable>
+      <variable id="tr7uoZ7KT#?UhdPE`QFT">depositos_obj</variable>
+      <variable id="1bZh56G$q@=:iP=VQFlp">faja_obj</variable>
+      <variable id="372^]5W]/NpLq+]SU65A">faja02_obj</variable>
+      <variable id="?2_1q1s_|/vS~5bbi]Ls">equipo01_obj</variable>
+      <variable id="xU{lU8ZtbbpC_Rde!7WG">faja03_obj</variable>
+      <variable id="S=rEEe+buJuuzCKfPsFg">faja04_obj</variable>
+      <variable id="Y-Q09=N.343mb3aY]JgJ">equipo02_obj</variable>
+      <variable id="3|VUJ=%}LLwmY;R+I!V4">sag_mill_feed_obj</variable>
+      <variable id="BOd+8nltgDQ%pS!8}+X}">sag_mill_feed_conveyor_obj</variable>
+      <variable id="8SS{G~K{KS!AZ@q47exY">molinoSAG_obj</variable>
+      <variable id="utUHicX1%unYG5-LIt^t">pebble_crusher_obj</variable>
+      <variable id=".|~O5(k^+h@S^8hGAmq0">bombas02_obj</variable>
+      <variable id="~|S;GdB9yV(nLv:J;jy7">depositos02_obj</variable>
+      <variable id="rF$M`A#:tFtBwxwv~lau">bombas_03_obj</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="8b?%qTAm+o-/k~?]T8,!" x="490" y="-210">
+      <field name="VAR" id="3|VUJ=%}LLwmY;R+I!V4">sag_mill_feed_obj</field>
+      <value name="VALUE">
+        <block type="objectList" id="qe,9Sm?]!^t=9~;:`y6I">
+          <field name="FIELDNAME">equipo_200_CV_0102</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="?A}l#jzP5J843V;jv0Zs" x="490" y="-150">
+      <field name="VAR" id="BOd+8nltgDQ%pS!8}+X}">sag_mill_feed_conveyor_obj</field>
+      <value name="VALUE">
+        <block type="objectList" id="rhh?P^Hs6`g1S?t{V..d">
+          <field name="FIELDNAME">equipo_200_CV_0108</field>
+        </block>
+      </value>
+    </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="hide" id="u}~/JqnVIvNANxXY{jVW" x="-50" y="-90">
       <value name="VALUE">
         <shadow type="objectList" id="K]Q8@Bgf5p/b$Pp0%Db+">
@@ -1353,8 +1389,145 @@
         </block>
       </value>
     </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="WEhnxU(#zEs$x^:@6OeK" x="490" y="-90">
+      <field name="VAR" id="8SS{G~K{KS!AZ@q47exY">molinoSAG_obj</field>
+      <value name="VALUE">
+        <block type="objectList" id="1e*kAll}G``lyPR#krsr">
+          <field name="FIELDNAME">equipo_200_ML_0120</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="6y*u#^.gIK3a*WzPd1}@" x="490" y="-30">
+      <field name="VAR" id="utUHicX1%unYG5-LIt^t">pebble_crusher_obj</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="xXyzqVfjps2T4k*(GC`e" x="490" y="50">
+      <field name="VAR" id="D3W..IP3)@N%)PK%u|9F">saranda_obj</field>
+      <value name="VALUE">
+        <block type="objectList" id="LAD4!es.VZ/jTwG3[One">
+          <field name="FIELDNAME">equipo_200_SR_0124</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="dT}]txWQz]1h$8LP;5C3" x="490" y="110">
+      <field name="VAR" id="QqZAHa}[A83do;2E,xF*">bombas_obj</field>
+      <value name="VALUE">
+        <block type="lists_create_with" id="s!FBO2,D5pG4?)ybclW1">
+          <mutation items="2"></mutation>
+          <value name="ADD0">
+            <block type="objectList" id="=c#j!^V`6lyhgKUI*.rV">
+              <field name="FIELDNAME">equipo_200_PP_0142</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="objectList" id="Ee=xp4Q^r*c.I!!]H~+=">
+              <field name="FIELDNAME">equipo_200_PP_0144</field>
+            </block>
+          </value>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="X=8s7+%18M.}N{y--|xn" x="490" y="210">
+      <field name="VAR" id="9.^AKklM,1zC0!K@$Y%j">bombas_ciclon_obj</field>
+      <value name="VALUE">
+        <block type="objectList" id="uoWNBy(6)_^Q%;Ab{dNY">
+          <field name="FIELDNAME">equipo_200_CL_0150</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="UQ[:1?sMP)k!,DNa[h,C" x="490" y="290">
+      <field name="VAR" id="C1W.2$`EcTnf_+=`;U`{">debajo_bomba_ciclon_obj</field>
+      <value name="VALUE">
+        <block type="objectList" id="m-a9sW)HVdHzARs/|VyU">
+          <field name="FIELDNAME">equipo_400_SA_0230</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="dq/Dp/,MySZ])y1zN/xr" x="490" y="350">
+      <field name="VAR" id="tr7uoZ7KT#?UhdPE`QFT">depositos_obj</field>
+      <value name="VALUE">
+        <block type="objectList" id="MROw3]0RjF0{ucCz~C|1">
+          <field name="FIELDNAME">equipo_200_TK_0152</field>
+        </block>
+      </value>
+      <next>
+        <block type="variables_set" id="QL=vncPfqq+MRxjMhS|.">
+          <field name="VAR" id="~|S;GdB9yV(nLv:J;jy7">depositos02_obj</field>
+          <value name="VALUE">
+            <block type="objectList" id="?4Ueexu25@qqh0(!KW6N">
+              <field name="FIELDNAME">equipo_200_TK_0171</field>
+            </block>
+          </value>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="gH8wIaf].,vr@P!4)Z*?" x="490" y="450">
+      <field name="VAR" id=".|~O5(k^+h@S^8hGAmq0">bombas02_obj</field>
+      <value name="VALUE">
+        <block type="objectList" id="e?SiPQL{R;)C?USjgDR2">
+          <field name="FIELDNAME">equipo_200_PP_0158</field>
+        </block>
+      </value>
+      <next>
+        <block type="variables_set" id="bB]u4RA8;xNjuK4*LF}]">
+          <field name="VAR" id="rF$M`A#:tFtBwxwv~lau">bombas_03_obj</field>
+          <value name="VALUE">
+            <block type="objectList" id="Z6upu]A*;p|1sF}10]H*">
+              <field name="FIELDNAME">equipo_200_PP_0156</field>
+            </block>
+          </value>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="|aSy{wl?xwf(l.CM^i##" x="510" y="530">
+      <field name="VAR" id="1bZh56G$q@=:iP=VQFlp">faja_obj</field>
+      <value name="VALUE">
+        <block type="objectList" id="#R74J?XCSt~?YOLL~qKg">
+          <field name="FIELDNAME">equipo_200_CV_0125</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="%.NRff,TJb-uqzMmLXi3" x="510" y="590">
+      <field name="VAR" id="372^]5W]/NpLq+]SU65A">faja02_obj</field>
+      <value name="VALUE">
+        <block type="objectList" id="{JTSUh3_r;rJkLLK$)Y1">
+          <field name="FIELDNAME">equipo_200_CV_0127</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="ZAb4TW-sg_Or5O%MZypb" x="510" y="650">
+      <field name="VAR" id="?2_1q1s_|/vS~5bbi]Ls">equipo01_obj</field>
+      <value name="VALUE">
+        <block type="objectList" id="NQWiLa5XQ~.MaEolD6CG">
+          <field name="FIELDNAME">equipo_200_CR_0130</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="g.S{+N0)6As-Ef0JgUFm" x="510" y="710">
+      <field name="VAR" id="xU{lU8ZtbbpC_Rde!7WG">faja03_obj</field>
+      <value name="VALUE">
+        <block type="objectList" id="E^RHy|J*AP,v)6,HqDrI">
+          <field name="FIELDNAME">equipo_200_CV_0108</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="RhRUey|7US0Eq},8I_PL" x="510" y="770">
+      <field name="VAR" id="S=rEEe+buJuuzCKfPsFg">faja04_obj</field>
+      <value name="VALUE">
+        <block type="objectList" id="ZrpM1rGE2bNA%*b*+k(l">
+          <field name="FIELDNAME">equipo_200_CV_0102</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="tHf+~U8b-)20Lc7u?;oz" x="510" y="830">
+      <field name="VAR" id="Y-Q09=N.343mb3aY]JgJ">equipo02_obj</field>
+      <value name="VALUE">
+        <block type="objectList" id="(wCMbEU4$V%?7QPc{v-@">
+          <field name="FIELDNAME">equipo_200_PP_0175</field>
+        </block>
+      </value>
+    </block>
   </tab>
-  <tab name="pasos" type="CommonTab" active="false" scrollx="-42.938537597655454" scrolly="-472.5162048339844" scale="1">
+  <tab name="pasos" type="CommonTab" active="true" scrollx="-69.0660400390625" scrolly="-1670.3423309326176" scale="1">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id=";ip9Dw?b/u|Eq=Zz64w:">proceso</variable>
       <variable id="yki,}4M@uJvvwM1uROhK">paso</variable>
@@ -1362,6 +1535,7 @@
       <variable id="wo,h0=9*+3^I|]?pJB}=">camara</variable>
       <variable id="(bpDONAln=CXuKeit:5S">camara_direccion</variable>
       <variable id=";ZkZ{TRtA4hmWkq!CBtO">objeto</variable>
+      <variable id="tr7uoZ7KT#?UhdPE`QFT">depositos_obj</variable>
     </variables>
     <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="QR{Y[*9jG*5oC:JBK?-x" x="370" y="-110">
       <field name="VAR" id=";ip9Dw?b/u|Eq=Zz64w:">proceso</field>
@@ -1419,12 +1593,12 @@
                               <field name="MOVEMENT_TYPE">LINEAR</field>
                               <value name="POSITION">
                                 <block type="objectList" id="Jk(oKqI}tqK0TST(^AV2">
-                                  <field name="FIELDNAME">molienda_Pos01</field>
+                                  <field name="FIELDNAME">molienda_Pos14</field>
                                 </block>
                               </value>
                               <value name="LOOKAT">
                                 <block type="objectList" id="Gq1d|bg]UgY|Rs/.JS^V">
-                                  <field name="FIELDNAME">molienda_Dir01</field>
+                                  <field name="FIELDNAME">molienda_Dir14</field>
                                 </block>
                               </value>
                               <value name="DURATION">
@@ -1472,17 +1646,17 @@
                   </value>
                   <value name="ARG2">
                     <block type="objectList" id="1UwJEdY1=x`h@6,$D%4^">
-                      <field name="FIELDNAME">molienda_Pos14</field>
+                      <field name="FIELDNAME">molienda_Pos13</field>
                     </block>
                   </value>
                   <value name="ARG3">
                     <block type="objectList" id="#du-$Gsm5[fp9fLb(4xL">
-                      <field name="FIELDNAME">molienda_Dir14</field>
+                      <field name="FIELDNAME">molienda_Dir13</field>
                     </block>
                   </value>
                   <value name="ARG4">
-                    <block type="objectList" id="u[V$tY]lq}m?IZ(`xSVN">
-                      <field name="FIELDNAME">pCube488</field>
+                    <block type="objectList" id="yLW7zb;@I^9d^{V^z_+D">
+                      <field name="FIELDNAME">equipo_200_CV_0102</field>
                     </block>
                   </value>
                 </block>
@@ -1517,17 +1691,17 @@
                       </value>
                       <value name="ARG2">
                         <block type="objectList" id="OJK?B*d4eh^PXIq!=ql5">
-                          <field name="FIELDNAME">molienda_Pos11</field>
+                          <field name="FIELDNAME">molienda_Pos12</field>
                         </block>
                       </value>
                       <value name="ARG3">
                         <block type="objectList" id="VZvAH5tF7{xl/`%A^Xz3">
-                          <field name="FIELDNAME">molienda_Dir11</field>
+                          <field name="FIELDNAME">molienda_Dir12</field>
                         </block>
                       </value>
                       <value name="ARG4">
-                        <block type="objectList" id="m}-Jv:Et!6mqhYTPq+Z~">
-                          <field name="FIELDNAME">pCube2416</field>
+                        <block type="objectList" id="`yk_j!w+OE9r8cPF)HB-">
+                          <field name="FIELDNAME">equipo_200_CV_0108</field>
                         </block>
                       </value>
                     </block>
@@ -1571,8 +1745,8 @@
                             </block>
                           </value>
                           <value name="ARG4">
-                            <block type="objectList" id="a@S}J5bZqU,,}dC;H890">
-                              <field name="FIELDNAME">molineda_mesh1281</field>
+                            <block type="objectList" id="0h8@y+kVzRZWE-7]@BAv">
+                              <field name="FIELDNAME">equipo_200_ML_0120</field>
                             </block>
                           </value>
                         </block>
@@ -1616,8 +1790,8 @@
                                 </block>
                               </value>
                               <value name="ARG4">
-                                <block type="objectList" id="B3wj!VRlg4K)DD%!HN{T">
-                                  <field name="FIELDNAME">molineda_mesh2577</field>
+                                <block type="objectList" id="2EHAZz^Eh3ox}iA4h^Vy">
+                                  <field name="FIELDNAME">equipo_200_SR_0124</field>
                                 </block>
                               </value>
                             </block>
@@ -1652,17 +1826,17 @@
                                   </value>
                                   <value name="ARG2">
                                     <block type="objectList" id="5]?5%GDdPT~@oYT)#UsU">
-                                      <field name="FIELDNAME">molienda_Pos07</field>
+                                      <field name="FIELDNAME">molienda_Pos08</field>
                                     </block>
                                   </value>
                                   <value name="ARG3">
                                     <block type="objectList" id="dw!T;!5)r8+(Ah6Lu6ge">
-                                      <field name="FIELDNAME">molienda_Dir07</field>
+                                      <field name="FIELDNAME">molienda_Dir08</field>
                                     </block>
                                   </value>
                                   <value name="ARG4">
-                                    <block type="objectList" id="ZlgC%Maj8b[f=z/|k*Ak">
-                                      <field name="FIELDNAME">pCube488</field>
+                                    <block type="objectList" id="D_XSsl=kHYbtPZ.Y+ALY">
+                                      <field name="FIELDNAME">equipo_200_CV_0125</field>
                                     </block>
                                   </value>
                                 </block>
@@ -1697,17 +1871,17 @@
                                       </value>
                                       <value name="ARG2">
                                         <block type="objectList" id="@vT1%A!D2F!3;k5yhiX=">
-                                          <field name="FIELDNAME">molienda_Pos08</field>
+                                          <field name="FIELDNAME">molienda_Pos09</field>
                                         </block>
                                       </value>
                                       <value name="ARG3">
                                         <block type="objectList" id="]ky=iFrFCkMyJuZ~xg}N">
-                                          <field name="FIELDNAME">molienda_Dir08</field>
+                                          <field name="FIELDNAME">molienda_Dir09</field>
                                         </block>
                                       </value>
                                       <value name="ARG4">
-                                        <block type="objectList" id="O$s6/t2R/u,rZ2ifHl,E">
-                                          <field name="FIELDNAME">pCube488</field>
+                                        <block type="objectList" id="1s-w/)UUV~E+o{DUTJLC">
+                                          <field name="FIELDNAME">equipo_200_CV_0127</field>
                                         </block>
                                       </value>
                                     </block>
@@ -1742,17 +1916,17 @@
                                           </value>
                                           <value name="ARG2">
                                             <block type="objectList" id="QMBo)k0k__]hD*sJ;77~">
-                                              <field name="FIELDNAME">molienda_Pos10</field>
+                                              <field name="FIELDNAME">molienda_Pos11</field>
                                             </block>
                                           </value>
                                           <value name="ARG3">
                                             <block type="objectList" id="OTeM%[flJdci4WLUGa!p">
-                                              <field name="FIELDNAME">molienda_Dir10</field>
+                                              <field name="FIELDNAME">molienda_Dir11</field>
                                             </block>
                                           </value>
                                           <value name="ARG4">
-                                            <block type="objectList" id="D[YEx,vL4+_B),lMn1RG">
-                                              <field name="FIELDNAME">pCube488</field>
+                                            <block type="objectList" id="?h(gN$/GX#kg}E7/FX?o">
+                                              <field name="FIELDNAME">equipo_200_CR_0130</field>
                                             </block>
                                           </value>
                                         </block>
@@ -1767,7 +1941,7 @@
                                             </shadow>
                                           </value>
                                           <statement name="DO">
-                                            <block type="procedures_callnoreturn" id="8PN?OCtXH:wE29=Jz,PF" disabled="true">
+                                            <block type="procedures_callnoreturn" id="8PN?OCtXH:wE29=Jz,PF">
                                               <mutation name="pasos">
                                                 <arg name="paso"></arg>
                                                 <arg name="img"></arg>
@@ -1787,17 +1961,17 @@
                                               </value>
                                               <value name="ARG2">
                                                 <block type="objectList" id="a$~I/=cy30JJ1fz@CgfU">
-                                                  <field name="FIELDNAME">molienda_Pos14</field>
+                                                  <field name="FIELDNAME">molienda_Pos05</field>
                                                 </block>
                                               </value>
                                               <value name="ARG3">
                                                 <block type="objectList" id="];-K?wXj:rZZFBe97$]a">
-                                                  <field name="FIELDNAME">molienda_Dir14</field>
+                                                  <field name="FIELDNAME">molienda_Dir05</field>
                                                 </block>
                                               </value>
                                               <value name="ARG4">
-                                                <block type="objectList" id=")Mr9Zic{*bSG(nTyiR*a">
-                                                  <field name="FIELDNAME">pCube488</field>
+                                                <block type="objectList" id="8Hv2$xz?nqd2$z1Ea!U4">
+                                                  <field name="FIELDNAME">equipo_200_PP_0175</field>
                                                 </block>
                                               </value>
                                             </block>
@@ -1841,8 +2015,8 @@
                                                     </block>
                                                   </value>
                                                   <value name="ARG4">
-                                                    <block type="objectList" id=";_na3i+axT7;0ji+qRjR">
-                                                      <field name="FIELDNAME">pCube488</field>
+                                                    <block type="objectList" id="QO*9Ts/.0kCGn/hI4Cy#">
+                                                      <field name="FIELDNAME">equipo_200_PP_0142</field>
                                                     </block>
                                                   </value>
                                                 </block>
@@ -1857,7 +2031,7 @@
                                                     </shadow>
                                                   </value>
                                                   <statement name="DO">
-                                                    <block type="procedures_callnoreturn" id="qGI/cO-]B8U!rHhcr|f?" disabled="true">
+                                                    <block type="procedures_callnoreturn" id="qGI/cO-]B8U!rHhcr|f?">
                                                       <mutation name="pasos">
                                                         <arg name="paso"></arg>
                                                         <arg name="img"></arg>
@@ -1876,18 +2050,18 @@
                                                         </block>
                                                       </value>
                                                       <value name="ARG2">
-                                                        <block type="objectList" id="gdMi|zUnX(Dz9CXNh:n1">
-                                                          <field name="FIELDNAME">molienda_Pos14</field>
+                                                        <block type="objectList" id="3w2haT5_b/z21FCU2qa+">
+                                                          <field name="FIELDNAME">molienda_Pos03</field>
                                                         </block>
                                                       </value>
                                                       <value name="ARG3">
-                                                        <block type="objectList" id="lt9uy).ys$EbgcXYy3Fd">
-                                                          <field name="FIELDNAME">molienda_Dir14</field>
+                                                        <block type="objectList" id="=$I2M[u9awORdBZZypXZ">
+                                                          <field name="FIELDNAME">molienda_Dir03</field>
                                                         </block>
                                                       </value>
                                                       <value name="ARG4">
-                                                        <block type="objectList" id="IMB33Ot_Lu7v#HXq?4z3">
-                                                          <field name="FIELDNAME">pCube488</field>
+                                                        <block type="objectList" id="FfeD!Qk|o(o/FOj4s+[R">
+                                                          <field name="FIELDNAME">equipo_200_PP_0144</field>
                                                         </block>
                                                       </value>
                                                     </block>
@@ -1921,18 +2095,18 @@
                                                             </block>
                                                           </value>
                                                           <value name="ARG2">
-                                                            <block type="objectList" id="D{Pr+r#ZV$^EAd?]GWVq">
+                                                            <block type="objectList" id="gdMi|zUnX(Dz9CXNh:n1">
                                                               <field name="FIELDNAME">molienda_Pos04</field>
                                                             </block>
                                                           </value>
                                                           <value name="ARG3">
-                                                            <block type="objectList" id="a_J2)zkx,=+c=,NrS5uC">
+                                                            <block type="objectList" id="lt9uy).ys$EbgcXYy3Fd">
                                                               <field name="FIELDNAME">molienda_Dir04</field>
                                                             </block>
                                                           </value>
                                                           <value name="ARG4">
-                                                            <block type="objectList" id="c#t(G[w`hML0moN,@Ia2">
-                                                              <field name="FIELDNAME">pCube488</field>
+                                                            <block type="objectList" id="MbkI:At1L4]+X?z.]4.q">
+                                                              <field name="FIELDNAME">equipo_200_CL_0150</field>
                                                             </block>
                                                           </value>
                                                         </block>
@@ -1947,7 +2121,7 @@
                                                             </shadow>
                                                           </value>
                                                           <statement name="DO">
-                                                            <block type="procedures_callnoreturn" id="}@Qw,ts4N;JZzOb#m7p2" disabled="true">
+                                                            <block type="procedures_callnoreturn" id="}@Qw,ts4N;JZzOb#m7p2">
                                                               <mutation name="pasos">
                                                                 <arg name="paso"></arg>
                                                                 <arg name="img"></arg>
@@ -1966,18 +2140,18 @@
                                                                 </block>
                                                               </value>
                                                               <value name="ARG2">
-                                                                <block type="objectList" id="EP{6AS4K{yJ%Z%^-0f*y">
-                                                                  <field name="FIELDNAME">molienda_Pos14</field>
+                                                                <block type="objectList" id="D{Pr+r#ZV$^EAd?]GWVq">
+                                                                  <field name="FIELDNAME">molienda_Pos10</field>
                                                                 </block>
                                                               </value>
                                                               <value name="ARG3">
-                                                                <block type="objectList" id="hR2UR}2PZRCz~)cz)[[!">
-                                                                  <field name="FIELDNAME">molienda_Dir14</field>
+                                                                <block type="objectList" id="a_J2)zkx,=+c=,NrS5uC">
+                                                                  <field name="FIELDNAME">molienda_Dir10</field>
                                                                 </block>
                                                               </value>
                                                               <value name="ARG4">
-                                                                <block type="objectList" id="%j,OuEo%,QA[:-PK|v~u">
-                                                                  <field name="FIELDNAME">pCube488</field>
+                                                                <block type="objectList" id="W{eX,Giiq11F(^;-nI#+">
+                                                                  <field name="FIELDNAME">equipo_400_SA_0230</field>
                                                                 </block>
                                                               </value>
                                                             </block>
@@ -2010,19 +2184,9 @@
                                                                       <field name="TEXT">/images/09-1.png</field>
                                                                     </block>
                                                                   </value>
-                                                                  <value name="ARG2">
-                                                                    <block type="objectList" id="Qp?txCB#NKgaZ7=tP:t1">
-                                                                      <field name="FIELDNAME">molienda_Pos14</field>
-                                                                    </block>
-                                                                  </value>
-                                                                  <value name="ARG3">
-                                                                    <block type="objectList" id="1LkQ%VidOSw0Dyi5K:IJ">
-                                                                      <field name="FIELDNAME">molienda_Dir14</field>
-                                                                    </block>
-                                                                  </value>
                                                                   <value name="ARG4">
-                                                                    <block type="objectList" id="b06?i=*X7[7Pd]kg^A9i">
-                                                                      <field name="FIELDNAME">pCube488</field>
+                                                                    <block type="variables_get" id="PR;]u*Nwi:Ju0:T`n2om">
+                                                                      <field name="VAR" id="tr7uoZ7KT#?UhdPE`QFT">depositos_obj</field>
                                                                     </block>
                                                                   </value>
                                                                 </block>
@@ -2056,18 +2220,18 @@
                                                                         </block>
                                                                       </value>
                                                                       <value name="ARG2">
-                                                                        <block type="objectList" id="Q;,JHK-y3g)OK%R~iO*^">
-                                                                          <field name="FIELDNAME">molienda_Pos05</field>
+                                                                        <block type="objectList" id=")1M*68+fnhrs3.b|(JNH">
+                                                                          <field name="FIELDNAME">molienda_Pos06</field>
                                                                         </block>
                                                                       </value>
                                                                       <value name="ARG3">
-                                                                        <block type="objectList" id="40bdnXnZ7yNW?qauG;4Y">
-                                                                          <field name="FIELDNAME">molienda_Dir05</field>
+                                                                        <block type="objectList" id="1LkQ%VidOSw0Dyi5K:IJ">
+                                                                          <field name="FIELDNAME">molienda_Dir06</field>
                                                                         </block>
                                                                       </value>
                                                                       <value name="ARG4">
-                                                                        <block type="objectList" id="$,@=kc${oaK~?~Ki;;e/">
-                                                                          <field name="FIELDNAME">pCube488</field>
+                                                                        <block type="objectList" id="MB#=Frh2;`3SPEK:Cjci">
+                                                                          <field name="FIELDNAME">equipo_200_TK_0152</field>
                                                                         </block>
                                                                       </value>
                                                                     </block>
@@ -2101,18 +2265,18 @@
                                                                             </block>
                                                                           </value>
                                                                           <value name="ARG2">
-                                                                            <block type="objectList" id="mQDN[Pge0Z^I2^s`0T=*">
-                                                                              <field name="FIELDNAME">molienda_Pos05</field>
+                                                                            <block type="objectList" id="Qp?txCB#NKgaZ7=tP:t1">
+                                                                              <field name="FIELDNAME">molienda_Pos06</field>
                                                                             </block>
                                                                           </value>
                                                                           <value name="ARG3">
-                                                                            <block type="objectList" id="e{(AtJ$Lf2.|DLQobc36">
-                                                                              <field name="FIELDNAME">molienda_Dir05</field>
+                                                                            <block type="objectList" id="oKe[:r2qNOF}4I,$%%~/">
+                                                                              <field name="FIELDNAME">molienda_Dir06</field>
                                                                             </block>
                                                                           </value>
                                                                           <value name="ARG4">
-                                                                            <block type="objectList" id="X9[[{Fm}%TD8n:JZXpof">
-                                                                              <field name="FIELDNAME">pCube488</field>
+                                                                            <block type="objectList" id="k?Km{,gm2}=u]elps1He">
+                                                                              <field name="FIELDNAME">equipo_200_TK_0171</field>
                                                                             </block>
                                                                           </value>
                                                                         </block>
@@ -2146,18 +2310,18 @@
                                                                                 </block>
                                                                               </value>
                                                                               <value name="ARG2">
-                                                                                <block type="objectList" id="h3]dN6%MoyJ4YJ47u^a{">
-                                                                                  <field name="FIELDNAME">molienda_Pos06</field>
+                                                                                <block type="objectList" id="Q;,JHK-y3g)OK%R~iO*^">
+                                                                                  <field name="FIELDNAME">molienda_Pos07</field>
                                                                                 </block>
                                                                               </value>
                                                                               <value name="ARG3">
-                                                                                <block type="objectList" id="UC0{cBrNBYy*S@;_zawk">
-                                                                                  <field name="FIELDNAME">molienda_Dir06</field>
+                                                                                <block type="objectList" id="40bdnXnZ7yNW?qauG;4Y">
+                                                                                  <field name="FIELDNAME">molienda_Dir07</field>
                                                                                 </block>
                                                                               </value>
                                                                               <value name="ARG4">
-                                                                                <block type="objectList" id="C}wQL4w0#/|oi?:i/~=O">
-                                                                                  <field name="FIELDNAME">pCube488</field>
+                                                                                <block type="objectList" id="A+]V)qN[SGv-Cw6OU=AS">
+                                                                                  <field name="FIELDNAME">equipo_200_PP_0156</field>
                                                                                 </block>
                                                                               </value>
                                                                             </block>
@@ -2191,18 +2355,18 @@
                                                                                     </block>
                                                                                   </value>
                                                                                   <value name="ARG2">
-                                                                                    <block type="objectList" id="3e-78SGfkg21~$Wbk]u_">
-                                                                                      <field name="FIELDNAME">molienda_Pos06</field>
+                                                                                    <block type="objectList" id=".?7heADeR}hw?oyJ:Nty">
+                                                                                      <field name="FIELDNAME">molienda_Pos07</field>
                                                                                     </block>
                                                                                   </value>
                                                                                   <value name="ARG3">
-                                                                                    <block type="objectList" id="W!YVOo0Mk@;EDf{7}I%`">
-                                                                                      <field name="FIELDNAME">molienda_Dir06</field>
+                                                                                    <block type="objectList" id="m,zcxVh/qJeVvyY5ToFC">
+                                                                                      <field name="FIELDNAME">molienda_Dir07</field>
                                                                                     </block>
                                                                                   </value>
                                                                                   <value name="ARG4">
-                                                                                    <block type="objectList" id="ay:6[p+?FG-D|CD;=t(W">
-                                                                                      <field name="FIELDNAME">pCube488</field>
+                                                                                    <block type="objectList" id="zkL?r-/JXKd}h7hfegE,">
+                                                                                      <field name="FIELDNAME">equipo_200_PP_0158</field>
                                                                                     </block>
                                                                                   </value>
                                                                                 </block>
@@ -2245,11 +2409,6 @@
                                                                                           <field name="FIELDNAME">molienda_Dir14</field>
                                                                                         </block>
                                                                                       </value>
-                                                                                      <value name="ARG4">
-                                                                                        <block type="objectList" id="h}u;,uFX0Wz%!Zq1N!%)">
-                                                                                          <field name="FIELDNAME">pCube488</field>
-                                                                                        </block>
-                                                                                      </value>
                                                                                     </block>
                                                                                   </statement>
                                                                                   <next>
@@ -2288,11 +2447,6 @@
                                                                                           <value name="ARG3">
                                                                                             <block type="objectList" id="_sHNi93N08;+BB}%O6`^">
                                                                                               <field name="FIELDNAME">molienda_Dir14</field>
-                                                                                            </block>
-                                                                                          </value>
-                                                                                          <value name="ARG4">
-                                                                                            <block type="objectList" id="})Y=/CZm#Ojkz)a:`biY">
-                                                                                              <field name="FIELDNAME">pCube488</field>
                                                                                             </block>
                                                                                           </value>
                                                                                         </block>
@@ -2339,5 +2493,5 @@
       </next>
     </block>
   </tab>
-  <editorsettings viewport-x="1109.4" viewport-y="37" viewport-w="751.6" viewport-h="464" viewport-hidden="true" toolbox-library-mode="true" toolbox-minimized-mode="false"></editorsettings>
+  <editorsettings viewport-x="1109.4" viewport-y="37" viewport-w="751.6" viewport-h="464" viewport-hidden="true" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
 </xml>
